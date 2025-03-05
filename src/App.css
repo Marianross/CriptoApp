@@ -1,0 +1,23 @@
+:root {
+
+    --color-primary: #fff;
+    --color-secondary: #09f;    
+    --color-tertiary: #3f3f3f;
+    --color-fourth: #ff8800;
+
+
+}
+
+.claro {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+    transition: all 0.2s ease-in;
+  
+}
+
+.oscuro {
+    background-color: var(--color-tertiary);
+    color: var(--color-tertiary);
+    transition: all 0.2s ease-in;
+}
+
