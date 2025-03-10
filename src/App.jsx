@@ -27,9 +27,11 @@ const cambiarModo = () => {
     }
   };
 
+let cantFav = addFavoritos.length;
+
   return (
     <div className={modo} >
-      <Header cambiarModo={cambiarModo} modo={modo} />
+      <Header cambiarModo={cambiarModo} modo={modo} cantFav={cantFav} />
       <Routes>
         <Route path="/" element={<ListadoCripto />} />
         <Route path="/cripto/:id" element={<CardCripto agregarFavorito={agregarFavorito} favoritos={addFavoritos} />} />

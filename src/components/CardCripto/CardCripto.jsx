@@ -30,7 +30,7 @@ export function CardCripto({ agregarFavorito, favoritos }) {
         setIsFav(favoritos.some(element => element.id === data.id));
       }
     } catch (error) {
-      console.error("Error al obtener datos de la API:", error);
+      console.log("Error al obtener datos de la API:", error);
     }
   };
 

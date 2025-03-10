@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 
-export function Header({ cambiarModo, modo }) {
+export function Header({ cambiarModo, modo, cantFav }) {
 
 
   return (
@@ -17,7 +17,7 @@ export function Header({ cambiarModo, modo }) {
            LISTADO DE CRIPTOMONEDAS
          </Link>
          <Link to='/favoritos' className='button'>
-           FAVORITOS
+           FAVORITOS + {cantFav}
          </Link>
         </nav>
       <div className={`cont-modo ${modo === "oscuro" ? "hidden" : ""}`}
